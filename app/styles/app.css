@@ -8,3 +8,18 @@ body {
 table {
   width: 100%;
 }
+
+.friend-profile {
+  text-align: left;
+}
+
+.friend-profile img {
+  float: left;
+  margin: 0 2em 1em;
+}
+
+.friend-profile-links li {
+  display: inline;
+  list-style: none;
+  padding-right: 1.5em;
+}
