@@ -11,6 +11,7 @@ table {
 
 .friend-profile {
   text-align: left;
+  overflow: hidden;
 }
 
 .friend-profile img {

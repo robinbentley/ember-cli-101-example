@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
     save() {
       if (this.get('isValid')) {
         this.get('model').save().then((friend) => {
-          this.transitionToRoute('friends.show', friend);
+          this.transitionToRoute('articles.index', friend);
         });
       } else {
         this.set('errorMessage', 'You have to fill in all the fields');
