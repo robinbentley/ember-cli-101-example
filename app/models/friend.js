@@ -21,14 +21,14 @@ export default DS.Model.extend({
 
     // Then why bother mentioning it without a specific example of valuable uses?
 
-    // set(key, value) {
-    //   var name = value.split(' ');
+    set(key, value) {
+      var name = value.split(' ');
 
-    //   this.set('firstName', name[0]);
-    //   this.set('lastName', name[1]);
+      this.set('firstName', name[0]);
+      this.set('lastName', name[1]);
 
-    //   return value;
-    // }
+      return value;
+    }
   }),
   capitalizedFirstName: changeGate('firstName', function(firstName) {
     return Ember.String.capitalize(firstName);

@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   article: null, // passed-in
   articleStates: null, // passed-in
   stateChanged: Ember.observer('article.state', function() {
-    var article = this.get('article');
+    //var article = this.get('article');
     console.log('OMG Expensive operation because article state changed');
   }),
   actions: {
