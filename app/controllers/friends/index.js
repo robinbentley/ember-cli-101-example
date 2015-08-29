@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
     // [Observable Mixin](http://emberjs.com/api/classes/Ember.Observable.html)
     // it switches a boolean property between false and true.
 
-    setSortBy: function (fieldName) {
+    setSortBy: function(fieldName) {
       this.set('sortBy', fieldName);
       this.toggleProperty('sortAscending');
 

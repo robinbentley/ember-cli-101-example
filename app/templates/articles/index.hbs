@@ -4,12 +4,12 @@
       <th>Description</th>
       <th>Notes</th>
       <th>Borrowed Since</th>
-      <th></th>
+      <th {{action 'showReturned'}}>Show/Hide Returned</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    {{#each model as |article|}}
+    {{#each filteredResults as |article|}}
       {{articles/article-row article=article save='save' articleStates=possibleStates}}
     {{/each}}
   </tbody>
