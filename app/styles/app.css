@@ -24,3 +24,7 @@ table {
   list-style: none;
   padding-right: 1.5em;
 }
+
+.friends-table thead tr {
+  cursor: pointer;
+}
